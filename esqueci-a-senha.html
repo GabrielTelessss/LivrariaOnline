@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="icon" href="./src/img/f2300ea2b862b1be3ffa7c67e98dc5fe.jpg">
+</head>
+<body>
+    <div class="main">
+        <form action="" id="formLogin">
+            <h1>Recuperar Senha</h1>
+            <div class="input-box">
+                <input type="email" name="email" placeholder="E-Mail: " required>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="email" name="confirmar-email" placeholder="Confirmar E-mail::" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <button type="submit" class="botao">Avançar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("formLogin").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "/livraria.html";
+        });
+    </script>
+
+</body>
+</html>

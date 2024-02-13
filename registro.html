@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="icon" href="./src/img/f2300ea2b862b1be3ffa7c67e98dc5fe.jpg">
+</head>
+
+<body>
+    <form action="" class="main" id="formLogin">
+        <h1>Cadastre-se</h1>
+        <div class="input-nome">
+            <input id="name" type="text" nome="nome" placeholder="Nome:" required>
+            <input id="sobrenome" type="text" nome="sobrenome" placeholder="Sobrenome:" required>
+        </div>
+
+        <div class="input-box">
+            <input id="email" type="email" name="EMail" required placeholder="E-mail:">
+        </div>
+        <div>
+        </div>
+        <div class="input-box input-senha-confirmar">
+            <input id="senha" type="password" name="senha" placeholder="Senha:" required>
+            <input id="confirmar-senha" type="password" name="confirmar-senha" placeholder="Confirmar Senha:" required>
+        </div>
+        <div>
+        <div class="input-box">
+            <input type="number" class="telefone" placeholder="Fone:" required>
+            <input type="text" class="endereco" placeholder="Endereço: " required>
+        </div>
+        </div>
+        <button type="submit" class="botao" onclick="submitForm()">Cadastre-se</button>
+        <div class="acessar">
+            <p>Já tem uma conta? <a href="/index.html">Acessar</a></p>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById("formLogin").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "/livraria.html";
+        });
+    </script>
+
+</body>
+<script src="./src/index.js"></script>
+</html>
