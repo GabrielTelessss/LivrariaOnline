@@ -78,6 +78,7 @@ img {
   padding: 5px 10px;
   cursor: pointer;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 #limpar-carrinho:hover {
